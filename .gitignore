@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.tmp.*
+.env
+.venv/
+venv/
+
+# runtime data: user database, logs, uploads, screenshots, generated reports
+data/
+temp/
+shot.png
+ConvAudit_*.pdf
