@@ -1060,26 +1060,15 @@ def render_left_sidebar(lang, active_mode):
             f"""
             <div class="support-box">
                 <div class="support-title">{_t(lang, "Yardıma mı ihtiyacın var?", "Need help?")}</div>
-                <div class="support-sub">{_t(lang, "Aşağıdan hızlı destek kanalı seç.", "Choose a fast support channel below.")}</div>
-                <div class="support-meta">• {_t(lang, "Yanıt süresi: 24 saat", "Response SLA: 24h")}</div>
-                <div class="support-meta">• {_t(lang, "Öncelik: Premium kullanıcılar", "Priority: Premium users")}</div>
+                <div class="support-sub">{_t(lang, "Aşağıdaki bağlantıdan bize ulaşabilirsin.", "You can reach us through the link below.")}</div>
+                <div class="support-meta">• {_t(lang, "Hata ve önerileri GitHub üzerinden iletebilirsin.", "Report bugs and suggestions on GitHub.")}</div>
             </div>
             """,
             unsafe_allow_html=True,
         )
         st.link_button(
-            _t(lang, "E-posta Desteği", "Email Support"),
-            "mailto:support@convaudit.ai",
-            use_container_width=True,
-        )
-        st.link_button(
-            _t(lang, "Canlı Destek Talebi", "Live Support Request"),
-            "https://example.com/support",
-            use_container_width=True,
-        )
-        st.link_button(
-            _t(lang, "Yardım Merkezi", "Help Center"),
-            "https://example.com/help-center",
+            _t(lang, "Sorun Bildir", "Report an Issue"),
+            "https://github.com/dilanhosgoren/convaudit/issues",
             use_container_width=True,
         )
 
